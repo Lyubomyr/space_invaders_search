@@ -35,7 +35,7 @@ RSpec.describe Services::SearchInvadersOnRadar do
   end
 
   describe '#call' do
-    it 'should return correct indexes of extreme points of cluser(array of indexes)' do
+    it 'should found invaders in the radar with best chances, set matrixs found_invaders with chances and coordinates of found invaders' do
       radar_matrix.clusters = [[[0, 0], [1, 0], [2, 1], [3, 0], [3, 1], [4, 0], [4, 1], [5, 0], [6, 0], [6, 1], [7, 1]], [[0, 4], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [3, 3], [3, 4], [4, 3], [4, 4], [4, 5], [5, 3], [5, 5], [6, 3], [7, 4]]]
       subject.call
 
